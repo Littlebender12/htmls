@@ -1,0 +1,125 @@
+<html>
+<head>
+<script type="text/css">
+* {
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    box-sizing: border-box;
+}
+
+.home-menu.pure-menu-open {
+background: #000000;
+}
+
+a:hover{
+border-bottom: 2px solid #00FF00;
+}
+
+.home-menu .pure-menu-heading {
+color: #FFFFFF;
+font-weight: 400;
+font-size: 120%;
+border:10px;
+border-bottom: #0099FF;
+}
+
+.home-menu a {
+color: #0099FF;
+text-align:left;
+}
+
+.pure-menu.pure-menu-horizontal>.pure-menu-heading {
+display: inline-block;
+margin: 5px;
+vertical-align: middle;
+}
+
+.pure-menu.pure-menu-open.pure-menu-fixed {
+border: 3px;
+border-bottom: 2px solid #00C2FF;
+}
+.projects a:hover {
+border-bottom: 2px solid #FF0000;
+}
+
+.about a:hover {
+border-bottom: 2px solid #00FF00;
+}
+
+div.home-menu a:hover{
+background-color: #222222;
+}
+
+body { 
+    position:fixed;
+    background-image: url('http://i.imgur.com/YVJnVXT.jpg');
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+        background-size: cover;
+}
+
+</script>
+<script type="text/javascript">
+
+function ds()
+{
+document.getElementById("idd").innerHTML= "Why did you click that button?";
+document.getElementById("idd2").innerHTML= "was it because it said 'click?'";
+}
+
+function send()
+{
+var colrange = document.getElementById("colrange").value;
+var x = document.getElementById("textb").value;
+document.getElementById("idd3").innerHTML=x;
+document.getElementById("idd3").style.color=colrange;
+if (x == "hi") 
+{
+alert("hello there! how are you doing?")
+
+}
+elif (x == "good.")
+{
+alert("good!")
+}
+}
+
+function setsiz()
+{
+var wid = document.getElementById("widt").value;
+var hei = document.getElementById("heig").value;
+document.getElementById("pic").width=wid;
+document.getElementById("pic").height=hei;
+}
+
+</script></head>
+
+<body background="http://lh5.googleusercontent.com/-NcnamU7AX4A/TYD66lD6tuI/AAAAAAAABWY/n0MZSSjR9_U/s1600/Techno_widescreen_wallpaper.jpg"><h1>
+        <p id="idd"></p></h1>
+<h2>
+        <p id="idd2"></p></h2>
+<img src="http://i.imgur.com/YVJnVXT.jpg" width="2000" height="40" border="2">
+
+<p style="color: white"><i>set picture size here.</i></p>
+
+<input type="number" id="widt"><p style="color: white"><b>Width</b></p></input>
+</p><p>
+<input type="number" id="heig"><p style="color: white"><b>Height</b></p></input>
+
+<button type="button" onclick="setsiz()">Send new size</button>
+<button type="button" onclick="ds()">Click!</button>
+
+<p id="new" style="color: white"></p>
+
+<a href="http://imgur.com/yG4LtHr.jpg"><img src='http://i.imgur.com/yG4LtHr.jpg' title="this is just pacman ghosts on a 5x5 Rubik's cube." width=128 
+height=100 id="pic"></a>
+</p><p>
+<input type="text" id="textb"><p style="color: white"><b>Text</b></p></input>
+</p><p>
+<input type="text" id="colrange" ><p style="color: white"><b>Color</b></p></input>
+
+<button type="button" onclick="send()">Send</button>
+
+<h3>
+<p id ="idd3" style="color: white"x></p>
+</h3>
